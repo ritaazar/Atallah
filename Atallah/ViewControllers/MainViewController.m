@@ -65,6 +65,7 @@
         RegistrationViewController *instance = [storyboard instantiateViewControllerWithIdentifier:@"RegistrationViewController"];
         instance.managedObjectContext = self.managedObjectContext;
         instance.isEditingMode = YES;
+        instance.registrationInfo = [self getRegistrationInfo];
         [self.navigationController pushViewController:instance animated:YES];
     }]];
     

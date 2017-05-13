@@ -92,6 +92,14 @@
     joinButton.layer.borderColor = LIGHT_BEIGE.CGColor;
     joinButton.layer.borderWidth = 2;
     joinButton.layer.cornerRadius = 5;
+    if (isEditingMode)
+    {
+        joinButton.titleLabel.text = @"Edit Account";
+    }
+    else
+    {
+        joinButton.titleLabel.text = @"Create Account";
+    }
     
     uploadImage.layer.borderColor = LIGHT_BEIGE.CGColor;
     uploadImage.layer.borderWidth = 2;
@@ -111,6 +119,34 @@
 //    [self.view addSubview:activityIndicator];
 //    activityIndicator.hidden = YES;
     
+    if (_registrationInfo != nil)
+    {
+        [self editAccount:_registrationInfo];
+    }
+}
+
+-(void) editAccount: (RegistrationInfo *) registrationInfo
+{
+    firstName.text = registrationInfo.firstName;
+    middleName.text = registrationInfo.middleName;
+    lastName.text = registrationInfo.lastName;
+    motherName.text = registrationInfo.motherName;
+    motherLastName.text = registrationInfo.motherLastName;
+    sex.text = registrationInfo.gender;
+    phoneNumber.text = registrationInfo.mobileNumber;
+    email.text = registrationInfo.emailAddress;
+    job.text = registrationInfo.job;
+    bloodType.text = registrationInfo.bloodType;
+    if ([registrationInfo.canDonate isEqualToString:@"NO"])
+    {
+        checkBox.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Unchecked.png"]];
+    }
+    else
+    {
+        checkBox.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Checked.png"]];
+    }
+    address.text = registrationInfo.address;
+    hometown.text = registrationInfo.hometown;
 }
 
 - (IBAction)selectPhoto:(UIButton *)sender {

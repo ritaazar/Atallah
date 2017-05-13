@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DownPicker.h"
 #import "AtallahNavigationController.h"
+#import "RegistrationInfo.h"
 
 @interface RegistrationViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, NSURLSessionDelegate>
 {
@@ -44,6 +45,7 @@
 @property (strong, nonatomic) DownPicker *bloodTypeDownPicker;
 @property (strong, nonatomic) UIActivityIndicatorView *activityIndicator;
 @property (assign) BOOL isEditingMode;
+@property (strong, nonatomic) RegistrationInfo *registrationInfo;
 
 - (IBAction)editObjectImage:(id)sender;
 - (IBAction)selectPhoto:(UIButton *)sender;
