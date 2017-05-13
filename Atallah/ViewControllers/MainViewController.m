@@ -54,8 +54,18 @@
 
 -(void) settingsBarItem
 {
+    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Settings" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
     
-}
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
+    
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Edit Account" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+    }]];
+    
+    // Present action sheet.
+    [self presentViewController:actionSheet animated:YES completion:nil];}
+
+
 -(void) fetchNewsData
 {
     //[[UIApplication sharedApplication] beginIgnoringInteractionEvents];
