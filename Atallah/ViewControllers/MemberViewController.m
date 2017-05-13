@@ -48,6 +48,8 @@
     //cell.imageView.image = [UIImage imageNamed: @"download.jpeg"];
     cell.nameLabel.text = [NSString stringWithFormat:@"%@ %@", member.firstName, member.lastName];
     cell.phoneLabel.text = member.mobileNumber;
+    cell.phoneBtn.tag = indexPath.row;
+    [cell.phoneBtn addTarget:self action:@selector(callNumber:) forControlEvents:UIControlEventTouchUpInside];
     
     return cell;
 }
@@ -57,4 +59,21 @@
     DetailsViewController *destinationView = segue.destinationViewController;
     destinationView.member = [_membersList objectAtIndex:_membersTableView.indexPathForSelectedRow.row];
 }
+
+- (IBAction)callNumber:(UIButton *)sender
+{
+    Member *member = [_membersList objectAtIndex: (int)sender.tag];
+    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@", member.mobileNumber]];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl])
+    {
+        [[UIApplication sharedApplication] openURL:phoneUrl];
+    } else
+    {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Alert"
+                                                                       message:@"Call facility is not available!" preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+}
+
 @end

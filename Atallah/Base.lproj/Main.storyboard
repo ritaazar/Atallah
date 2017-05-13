@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -891,12 +891,21 @@
                                                         <constraint firstAttribute="width" constant="50" id="Mb3-KQ-fnj"/>
                                                     </constraints>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZc-1h-MZq">
+                                                    <rect key="frame" x="289" y="25" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="91Y-uN-J2y"/>
+                                                        <constraint firstAttribute="height" constant="30" id="Y3M-u8-Mrk"/>
+                                                    </constraints>
+                                                    <state key="normal" backgroundImage="Phone-50"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="b6h-4i-7ce" firstAttribute="top" secondItem="UTP-9w-h6v" secondAttribute="bottom" constant="6" id="1y5-wq-N10"/>
                                                 <constraint firstItem="b6h-4i-7ce" firstAttribute="top" secondItem="UTP-9w-h6v" secondAttribute="bottom" constant="6" id="4uD-r2-khq"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="UTP-9w-h6v" secondAttribute="trailing" constant="-23" id="HtT-q9-NGR"/>
                                                 <constraint firstItem="b6h-4i-7ce" firstAttribute="top" secondItem="UTP-9w-h6v" secondAttribute="bottom" constant="6" id="Jjh-qG-y3U"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rZc-1h-MZq" secondAttribute="trailing" constant="15" id="Nzj-NX-B2R"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="b6h-4i-7ce" secondAttribute="trailing" constant="-12" id="SDP-5d-7Qt"/>
                                                 <constraint firstItem="NVW-pM-va6" firstAttribute="leading" secondItem="SpT-Ur-qYA" secondAttribute="leading" id="V7i-7x-3Eb"/>
                                                 <constraint firstItem="b6h-4i-7ce" firstAttribute="leading" secondItem="byU-HI-O4n" secondAttribute="leadingMargin" constant="92" id="VcF-K0-thZ"/>
@@ -904,6 +913,7 @@
                                                 <constraint firstItem="UTP-9w-h6v" firstAttribute="top" secondItem="byU-HI-O4n" secondAttribute="topMargin" constant="2" id="egk-aE-Zz1"/>
                                                 <constraint firstItem="NVW-pM-va6" firstAttribute="top" secondItem="SpT-Ur-qYA" secondAttribute="bottom" constant="15" id="j0n-5i-vee"/>
                                                 <constraint firstItem="SpT-Ur-qYA" firstAttribute="top" secondItem="byU-HI-O4n" secondAttribute="topMargin" constant="2" id="opH-HV-dY2"/>
+                                                <constraint firstItem="rZc-1h-MZq" firstAttribute="centerY" secondItem="byU-HI-O4n" secondAttribute="centerY" id="rvK-8g-Dpp"/>
                                                 <constraint firstItem="UTP-9w-h6v" firstAttribute="leading" secondItem="byU-HI-O4n" secondAttribute="leadingMargin" constant="82" id="uCZ-xM-JLF"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="NVW-pM-va6" secondAttribute="trailing" constant="-21" id="v8X-Ic-ofC"/>
                                                 <constraint firstItem="SpT-Ur-qYA" firstAttribute="leading" secondItem="byU-HI-O4n" secondAttribute="leadingMargin" constant="12" id="yAt-r6-8Bb"/>
@@ -913,6 +923,7 @@
                                         <connections>
                                             <outlet property="imageViewMember" destination="byU-HI-O4n" id="1Np-VW-7eP"/>
                                             <outlet property="nameLabel" destination="UTP-9w-h6v" id="yPw-BR-7dU"/>
+                                            <outlet property="phoneBtn" destination="rZc-1h-MZq" id="Asc-5N-Uxm"/>
                                             <outlet property="phoneLabel" destination="b6h-4i-7ce" id="p9H-J6-Fm5"/>
                                             <segue destination="YAe-bz-OfJ" kind="push" id="jde-Kw-KQQ"/>
                                         </connections>
@@ -946,7 +957,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chN-8p-9Rs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1720" y="397"/>
+            <point key="canvasLocation" x="1719.5" y="396.5"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="Pdv-cg-Rh8">
@@ -1370,6 +1381,7 @@ We will keep you informed of all activities and events.
         <image name="Entypo_e78e(0)_64" width="64" height="64"/>
         <image name="Entypo_e83d(0)_64" width="64" height="64"/>
         <image name="FBIcon_64" width="64" height="64"/>
+        <image name="Phone-50" width="50" height="50"/>
         <image name="WBIcon_64" width="64" height="64"/>
         <image name="unknwonImage" width="225" height="225"/>
         <image name="unknwonImage.jpeg" width="225" height="225"/>

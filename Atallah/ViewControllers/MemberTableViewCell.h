@@ -12,5 +12,5 @@
 @property (strong, nonatomic) IBOutlet UIView *imageViewMember;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *phoneLabel;
-
+@property (strong, nonatomic) IBOutlet UIButton *phoneBtn;
 @end
