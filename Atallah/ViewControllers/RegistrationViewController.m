@@ -22,12 +22,34 @@
 @implementation RegistrationViewController
 
 @synthesize firstName,middleName,lastName,motherName,motherLastName,phoneNumber,email,address,hometown,sex,job,bloodType, joinButton, uploadImage, checkBox, skipButton;
-@synthesize activityIndicator;
+@synthesize activityIndicator, isEditingMode;
+
+-(void) initNavigation
+{
+    [self.navigationController.navigationBar setBarTintColor:DARK_BEIGE];
+    [self.navigationController.navigationBar setTitleTextAttributes: @{NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue-Bold" size:18]}];
+    if (isEditingMode)
+    {
+        self.navigationItem.title = @"Edit Account";
+    }
+    else
+    {
+        self.navigationItem.title = @"Registration";
+    }
+    
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    self.navigationItem.backBarButtonItem =
+    [[UIBarButtonItem alloc] initWithTitle:@""
+                                     style:UIBarButtonItemStylePlain
+                                    target:nil
+                                    action:nil];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    [self initNavigation];
     hometown.delegate = self;
     
     [firstName setPlaceholder:@"First Name *"];
@@ -280,9 +302,6 @@
 -(void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-    [self.scrollerView layoutIfNeeded];
-    self.scrollerView.scrollEnabled = YES;
-    [self.scrollerView setContentSize:CGSizeMake(320, 910)];
     [self registerForKeyboardNotifications];
 }
 

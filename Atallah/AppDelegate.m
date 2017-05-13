@@ -42,9 +42,11 @@
     }
     else
     {
-        RegistrationViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"RegistrationViewController"];
+        UINavigationController *navigation = [storyboard instantiateViewControllerWithIdentifier:@"RegistrationNavigationController"];
+        
+        RegistrationViewController *viewController = (RegistrationViewController *) navigation.topViewController;
         viewController.managedObjectContext = self.managedObjectContext;
-        self.window.rootViewController = viewController;
+        self.window.rootViewController = navigation;
         [self.window makeKeyAndVisible];
     }
     [self logUser];

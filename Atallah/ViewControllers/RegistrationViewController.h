@@ -43,6 +43,7 @@
 @property (strong, nonatomic) DownPicker *jobDownPicker;
 @property (strong, nonatomic) DownPicker *bloodTypeDownPicker;
 @property (strong, nonatomic) UIActivityIndicatorView *activityIndicator;
+@property (assign) BOOL isEditingMode;
 
 - (IBAction)editObjectImage:(id)sender;
 - (IBAction)selectPhoto:(UIButton *)sender;

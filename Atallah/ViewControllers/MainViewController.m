@@ -15,6 +15,7 @@
 #import "RegistrationInfo.h"
 #import "NotificationInfo+CoreDataProperties.h"
 #import "NotificationDateViewController.h"
+#import "RegistrationViewController.h"
 
 @interface MainViewController ()
 
@@ -60,6 +61,11 @@
     
     [actionSheet addAction:[UIAlertAction actionWithTitle:@"Edit Account" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        RegistrationViewController *instance = [storyboard instantiateViewControllerWithIdentifier:@"RegistrationViewController"];
+        instance.managedObjectContext = self.managedObjectContext;
+        instance.isEditingMode = YES;
+        [self.navigationController pushViewController:instance animated:YES];
     }]];
     
     // Present action sheet.
