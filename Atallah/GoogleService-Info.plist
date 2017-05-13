@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>473704470839-j3bnd6ngge6ge5qbrc8ttfhl68db0h61.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.473704470839-j3bnd6ngge6ge5qbrc8ttfhl68db0h61</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAngY2Gy-m9M3M_u5uI_W7w9Nn8bbNf7cA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>473704470839</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Atallah.Maronite</string>
+	<key>PROJECT_ID</key>
+	<string>atallahmaronite-fc713</string>
+	<key>STORAGE_BUCKET</key>
+	<string>atallahmaronite-fc713.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:473704470839:ios:50d20e8e14a11dfe</string>
+	<key>DATABASE_URL</key>
+	<string>https://atallahmaronite-fc713.firebaseio.com</string>
+</dict>
+</plist>

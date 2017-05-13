@@ -1,0 +1,6 @@
+framework module Pods_Atallah {
+  umbrella header "Pods-Atallah-umbrella.h"
+
+  export *
+  module * { export * }
+}
