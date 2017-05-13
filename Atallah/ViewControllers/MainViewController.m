@@ -41,8 +41,21 @@
                                      style:UIBarButtonItemStylePlain
                                     target:nil
                                     action:nil];
+    
+    UIButton *settingsButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [settingsButton setBackgroundImage:[UIImage imageNamed:@"Settings-50"] forState:UIControlStateNormal];
+    [settingsButton addTarget:self action:@selector(settingsBarItem)
+         forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *flipButton = [[UIBarButtonItem alloc]
+                                   initWithCustomView:settingsButton];
+    self.navigationItem.rightBarButtonItem = flipButton;
 }
 
+-(void) settingsBarItem
+{
+    
+}
 -(void) fetchNewsData
 {
     //[[UIApplication sharedApplication] beginIgnoringInteractionEvents];
