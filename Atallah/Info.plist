@@ -96,6 +96,10 @@
 	<string>com.googleusercontent.apps.473704470839-j3bnd6ngge6ge5qbrc8ttfhl68db0h61</string>
 	<key>STORAGE_BUCKET</key>
 	<string>atallahmaronite-fc713.appspot.com</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

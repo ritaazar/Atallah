@@ -14,13 +14,7 @@
 #import <Fabric/Fabric.h>
 #import "UICKeyChainStore.h"
 #import "RegistrationInfo.h"
-@import Firebase;
-#import <FirebaseCore/FirebaseCore.h>
-#import <FirebaseInstanceID/FirebaseInstanceID.h>
-
-@interface AppDelegate ()
-
-@end
+#import <OneSignal/OneSignal.h>
 
 @implementation AppDelegate
 
@@ -54,75 +48,25 @@
         [self.window makeKeyAndVisible];
     }
     [self logUser];
+
     
-    [FIRApp configure];
+    [OneSignal initWithLaunchOptions:launchOptions
+                               appId:@"d6876a07-e1f2-4165-ad2e-48f355e8de73"
+            handleNotificationAction:nil
+                            settings:@{kOSSettingsKeyAutoPrompt: @false}];
+    OneSignal.inFocusDisplayType = OSNotificationDisplayTypeNotification;
     
-    //NSString *refreshedToken = [[FIRInstanceID instanceID] token];
-    //NSLog(@"MobileHospitalAppDelegate - token = %@", refreshedToken);
+    // Recommend moving the below line to prompt for push after informing the user about
+    //   how your app will use them.
+    [OneSignal promptForPushNotificationsWithUserResponse:^(BOOL accepted) {
+        NSLog(@"User accepted notifications: %d", accepted);
+    }];
     
-    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
-        UIUserNotificationType allNotificationTypes =
-        (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge);
-        UIUserNotificationSettings *settings =
-        [UIUserNotificationSettings settingsForTypes:allNotificationTypes categories:nil];
-        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
-    } else {
-        // iOS 10 or later
-#if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
-        UNAuthorizationOptions authOptions =
-        UNAuthorizationOptionAlert
-        | UNAuthorizationOptionSound
-        | UNAuthorizationOptionBadge;
-        [[UNUserNotificationCenter currentNotificationCenter]
-         requestAuthorizationWithOptions:authOptions
-         completionHandler:^(BOOL granted, NSError * _Nullable error) {
-         }
-         ];
-        
-        // For iOS 10 display notification (sent via APNS)
-        [[UNUserNotificationCenter currentNotificationCenter] setDelegate:self];
-        // For iOS 10 data message (sent via FCM)
-        [[FIRMessaging messaging] setRemoteMessageDelegate:self];
-#endif
-    }
-    
-    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    // Call syncHashedEmail anywhere in your iOS app if you have the user's email.
+    // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
+    // [OneSignal syncHashedEmail:userEmail];
     
     return YES;
-}
-
-- (void)applicationReceivedRemoteMessage:(nonnull FIRMessagingRemoteMessage *)remoteMessage
-{
-    NSLog(@"Test rita");
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    
-    NSString *title = userInfo[@"google.c.a.c_l"];
-    NSString *message = userInfo[@"aps"][@"alert"];
-    
-    NSString *url = [NSString stringWithFormat:@"%@", userInfo[@"url_key"]];
-    if (url != nil)
-    {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-    }
-    
-    [self showAlert:application :title :message];
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
-fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    
-    NSString *title = userInfo[@"google.c.a.c_l"];
-    NSString *message = userInfo[@"aps"][@"alert"];
-    
-    NSString *url = [NSString stringWithFormat:@"%@", userInfo[@"url_key"]];
-    if (url != nil)
-    {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-    }
-    
-    [self showAlert:application :title :message];
 }
 
 -(void) showAlert:(UIApplication *)application :(NSString *)title :(NSString *)message

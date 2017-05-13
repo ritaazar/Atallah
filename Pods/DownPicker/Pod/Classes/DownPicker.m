@@ -11,7 +11,6 @@
 
 
 #import "DownPicker.h"
-#import "CommonMacros.h"
 
 @implementation DownPicker
 {

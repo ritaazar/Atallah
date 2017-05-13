@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		469E879A380D6084CD582D8E /* Pods_Atallah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C28279E67793B09327EDB83 /* Pods_Atallah.framework */; };
+		35F6494B1EC74DF200E7712E /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F6494A1EC74DF200E7712E /* NotificationService.m */; };
+		35F6494F1EC74DF200E7712E /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 35F649471EC74DF200E7712E /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9EC1A8B036263F6BEB8A8FD6 /* libPods-Atallah.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF6CA31F6CCF64E1B219B40 /* libPods-Atallah.a */; };
+		D02CA97B054B10B7264DCBD7 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 379B6EFFBB662C594C066E19 /* libPods-OneSignalNotificationServiceExtension.a */; };
 		FA0E161E1E05E1DE00D18035 /* NotificationInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0E161B1E05E1DE00D18035 /* NotificationInfo+CoreDataClass.m */; };
 		FA0E161F1E05E1DE00D18035 /* NotificationInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0E161D1E05E1DE00D18035 /* NotificationInfo+CoreDataProperties.m */; };
 		FA24C1BA1E092569005923C3 /* NotificationDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24C1B81E092569005923C3 /* NotificationDateViewController.m */; };
@@ -42,9 +45,40 @@
 		FAA8BE3B1DFC9CB000EBDCA4 /* Atallah.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = FAA8BE391DFC9CB000EBDCA4 /* Atallah.xcworkspace */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		35F6494D1EC74DF200E7712E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7C90141DFC7E4C0046F836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35F649461EC74DF200E7712E;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35F649531EC74DF200E7712E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				35F6494F1EC74DF200E7712E /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1C28279E67793B09327EDB83 /* Pods_Atallah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Atallah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CD65AA2ED0B4D0AFBF5903 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		0EF6CA31F6CCF64E1B219B40 /* libPods-Atallah.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Atallah.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DD315A87950EC8F9BBF693 /* Pods-Atallah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atallah.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Atallah/Pods-Atallah.debug.xcconfig"; sourceTree = "<group>"; };
+		35F649471EC74DF200E7712E /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		35F649491EC74DF200E7712E /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		35F6494A1EC74DF200E7712E /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		35F6494C1EC74DF200E7712E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379B6EFFBB662C594C066E19 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6561AF1AD72A3E39540D2C74 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		ED15C6F9923AD8FC96B6BEB2 /* Pods-Atallah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atallah.release.xcconfig"; path = "Pods/Target Support Files/Pods-Atallah/Pods-Atallah.release.xcconfig"; sourceTree = "<group>"; };
 		FA0E16191E05E0DA00D18035 /* AttalahMaronite_1.8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AttalahMaronite_1.8.xcdatamodel; sourceTree = "<group>"; };
 		FA0E161A1E05E1DE00D18035 /* NotificationInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NotificationInfo+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -107,14 +141,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		35F649441EC74DF200E7712E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02CA97B054B10B7264DCBD7 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA7C90191DFC7E4C0046F836 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FA7C909D1DFC96100046F836 /* UserNotifications.framework in Frameworks */,
 				FA7C90A11DFC9BBB0046F836 /* Crashlytics.framework in Frameworks */,
-				469E879A380D6084CD582D8E /* Pods_Atallah.framework in Frameworks */,
 				FA7C90A21DFC9BBB0046F836 /* Fabric.framework in Frameworks */,
+				9EC1A8B036263F6BEB8A8FD6 /* libPods-Atallah.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,9 +167,20 @@
 			isa = PBXGroup;
 			children = (
 				FA7C909C1DFC96100046F836 /* UserNotifications.framework */,
-				1C28279E67793B09327EDB83 /* Pods_Atallah.framework */,
+				0EF6CA31F6CCF64E1B219B40 /* libPods-Atallah.a */,
+				379B6EFFBB662C594C066E19 /* libPods-OneSignalNotificationServiceExtension.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35F649481EC74DF200E7712E /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				35F649491EC74DF200E7712E /* NotificationService.h */,
+				35F6494A1EC74DF200E7712E /* NotificationService.m */,
+				35F6494C1EC74DF200E7712E /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		F6C48C7E1D36E5CABCB8FA5A /* Pods */ = {
@@ -137,6 +190,8 @@
 				FAA8BE391DFC9CB000EBDCA4 /* Atallah.xcworkspace */,
 				27DD315A87950EC8F9BBF693 /* Pods-Atallah.debug.xcconfig */,
 				ED15C6F9923AD8FC96B6BEB2 /* Pods-Atallah.release.xcconfig */,
+				6561AF1AD72A3E39540D2C74 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				05CD65AA2ED0B4D0AFBF5903 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -147,6 +202,7 @@
 				FA7C909F1DFC9BBB0046F836 /* Crashlytics.framework */,
 				FA7C90A01DFC9BBB0046F836 /* Fabric.framework */,
 				FA7C90391DFC86030046F836 /* Atallah */,
+				35F649481EC74DF200E7712E /* OneSignalNotificationServiceExtension */,
 				FA7C901D1DFC7E4C0046F836 /* Products */,
 				F6C48C7E1D36E5CABCB8FA5A /* Pods */,
 				02AA531D03EFF0F6DBD59205 /* Frameworks */,
@@ -157,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				FA7C901C1DFC7E4C0046F836 /* Atallah.app */,
+				35F649471EC74DF200E7712E /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -398,6 +455,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		35F649461EC74DF200E7712E /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35F649521EC74DF200E7712E /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				E58E427606F99326C5B8E7F4 /* [CP] Check Pods Manifest.lock */,
+				35F649431EC74DF200E7712E /* Sources */,
+				35F649441EC74DF200E7712E /* Frameworks */,
+				35F649451EC74DF200E7712E /* Resources */,
+				FEB1F672AD0301D056C853AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 35F649471EC74DF200E7712E /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FA7C901B1DFC7E4C0046F836 /* Atallah */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA7C90361DFC7E4C0046F836 /* Build configuration list for PBXNativeTarget "Atallah" */;
@@ -409,10 +485,12 @@
 				A2DD5F8BD2207D9A286676DC /* [CP] Embed Pods Frameworks */,
 				3BE42133F001E48BA597F262 /* [CP] Copy Pods Resources */,
 				FA7C909E1DFC9A160046F836 /* ShellScript */,
+				35F649531EC74DF200E7712E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				35F6494E1EC74DF200E7712E /* PBXTargetDependency */,
 			);
 			name = Atallah;
 			productName = Atallah;
@@ -428,11 +506,19 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Azar, Rita";
 				TargetAttributes = {
+					35F649461EC74DF200E7712E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5WR24GX8GQ;
+						ProvisioningStyle = Automatic;
+					};
 					FA7C901B1DFC7E4C0046F836 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5WR24GX8GQ;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -454,11 +540,19 @@
 			projectRoot = "";
 			targets = (
 				FA7C901B1DFC7E4C0046F836 /* Atallah */,
+				35F649461EC74DF200E7712E /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		35F649451EC74DF200E7712E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA7C901A1DFC7E4C0046F836 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,6 +614,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Atallah/Pods-Atallah-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E58E427606F99326C5B8E7F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		FA7C909E1DFC9A160046F836 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -533,9 +642,32 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run d4ee5c2181bbf7844dc810d486ad2c0e6d8e6b7c 4bfd5ded65a0e426c88034f97ad6bcaa92cb7c570643219949d91b93a7afba33";
 		};
+		FEB1F672AD0301D056C853AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		35F649431EC74DF200E7712E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F6494B1EC74DF200E7712E /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA7C90181DFC7E4C0046F836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,6 +700,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		35F6494E1EC74DF200E7712E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35F649461EC74DF200E7712E /* OneSignalNotificationServiceExtension */;
+			targetProxy = 35F6494D1EC74DF200E7712E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FA7C90401DFC86030046F836 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -588,6 +728,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		35F649501EC74DF200E7712E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6561AF1AD72A3E39540D2C74 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hanady Daccache (5WR24GX8GQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5WR24GX8GQ;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Atallah.Maronite.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		35F649511EC74DF200E7712E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05CD65AA2ED0B4D0AFBF5903 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hanady Daccache (5WR24GX8GQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5WR24GX8GQ;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Atallah.Maronite.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		FA7C90341DFC7E4C0046F836 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -683,8 +857,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Atallah/Atallah.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hanady Daccache (5WR24GX8GQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hanady Daccache (5WR24GX8GQ)";
-				DEVELOPMENT_TEAM = 5WR24GX8GQ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -694,8 +868,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Atallah.Maronite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bdb750be-08b5-45ce-acc9-49c0096525d5";
-				PROVISIONING_PROFILE_SPECIFIER = "Atallah Distribution Profile";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -706,8 +880,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Atallah/Atallah.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hanady Daccache (5WR24GX8GQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hanady Daccache (5WR24GX8GQ)";
-				DEVELOPMENT_TEAM = 5WR24GX8GQ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -717,14 +891,23 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Atallah.Maronite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bdb750be-08b5-45ce-acc9-49c0096525d5";
-				PROVISIONING_PROFILE_SPECIFIER = "Atallah Distribution Profile";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		35F649521EC74DF200E7712E /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35F649501EC74DF200E7712E /* Debug */,
+				35F649511EC74DF200E7712E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FA7C90171DFC7E4C0046F836 /* Build configuration list for PBXProject "Atallah" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

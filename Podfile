@@ -1,12 +1,12 @@
-
-platform :ios, "8.0"
-use_frameworks!
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
 
 target 'Atallah' do
-
-pod "DownPicker"
-pod 'Firebase/Core'
-pod 'Firebase/Messaging'
+	pod "DownPicker"
+	pod 'OneSignal', '>= 2.5.2', '< 3.0'
 
 end
 
+target 'OneSignalNotificationServiceExtension' do
+	pod 'OneSignal', '>= 2.5.2', '< 3.0'
+end
