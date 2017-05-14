@@ -34,6 +34,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *hometown;
 @property (weak, nonatomic) IBOutlet UITextField *sex;
 @property (weak, nonatomic) IBOutlet UITextField *job;
+@property (weak, nonatomic) IBOutlet UITextField *otherJobDescription;
 @property (weak, nonatomic) IBOutlet UITextField *bloodType;
 @property (weak, nonatomic) IBOutlet UIButton *joinButton;
 @property (strong, nonatomic) IBOutlet UIButton *uploadImage;

@@ -21,7 +21,7 @@
 
 @implementation RegistrationViewController
 
-@synthesize firstName,middleName,lastName,motherName,motherLastName,phoneNumber,email,address,hometown,sex,job,bloodType, joinButton, uploadImage, checkBox, skipButton;
+@synthesize firstName,middleName,lastName,motherName,motherLastName,phoneNumber,email,address,hometown,sex,job,bloodType, joinButton, uploadImage, checkBox, skipButton, otherJobDescription;
 @synthesize activityIndicator, isEditingMode;
 
 -(void) initNavigation
@@ -78,7 +78,12 @@
     [email setPlaceholder:@"Email Address"];
     
     [self setTextFieldStyle:job];
+    job.tag = 777;
     self.jobDownPicker = [[DownPicker alloc] initWithTextField:self.job withData:[RegistrationViewController getJobsList] withPlaceHolder:@"Job *"];
+    
+    [self setTextFieldStyle:otherJobDescription];
+    [otherJobDescription setPlaceholder:@"Other Job Description *"];
+    [otherJobDescription setHidden:YES];
     
     [self setTextFieldStyle:bloodType];
     self.bloodTypeDownPicker = [[DownPicker alloc] initWithTextField:self.bloodType withData:[RegistrationViewController getbloodTypeList] withPlaceHolder:@"Blood Type *"];
@@ -123,6 +128,13 @@
     {
         [self editAccount:_registrationInfo];
     }
+}
+
+-(void) textFieldDidEndEditing:(UITextField *)textField
+{
+    NSLog(@"textFieldDidEndEditing");
+    if(textField.tag == 777)
+        NSLog(@"Kher");
 }
 
 -(void) editAccount: (RegistrationInfo *) registrationInfo
@@ -328,6 +340,7 @@
     [theTextField.layer addSublayer:border];
     theTextField.layer.masksToBounds = YES;
     theTextField.delegate = self;
+    theTextField.backgroundColor = [UIColor clearColor];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
