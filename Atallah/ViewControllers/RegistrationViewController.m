@@ -94,11 +94,11 @@
     joinButton.layer.cornerRadius = 5;
     if (isEditingMode)
     {
-        joinButton.titleLabel.text = @"Edit Account";
+        [joinButton setTitle:@"Edit Account" forState:UIControlStateNormal];
     }
     else
     {
-        joinButton.titleLabel.text = @"Create Account";
+        [joinButton setTitle:@"Create Account" forState:UIControlStateNormal];
     }
     
     uploadImage.layer.borderColor = LIGHT_BEIGE.CGColor;
@@ -529,20 +529,37 @@
 //    activityIndicator.hidden = NO;
     if ([segue.identifier isEqualToString:@"createAccount"])
     {
-        [self postDataToServer];
-        [myCondition lock];
-        while (!postDataIsDone)
-            [myCondition wait];
-        
-        [self deleteExistingData];
-        [self saveRegistrationInfo];
-        [myCondition unlock];
+        if (isEditingMode)
+        {
+            [self editAccount];
+        }
+        else
+        {
+            [self createAccount];
+        }
     }
     destinationView = segue.destinationViewController;
     MainViewController *controller = (MainViewController *)destinationView.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
 }
 
+-(void) editAccount
+{
+    [self deleteExistingData];
+    [self saveRegistrationInfo];
+}
+
+-(void)createAccount
+{
+    [self postDataToServer];
+    [myCondition lock];
+    while (!postDataIsDone)
+        [myCondition wait];
+    
+    [self deleteExistingData];
+    [self saveRegistrationInfo];
+    [myCondition unlock];
+}
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {
     if ([identifier isEqualToString:@"createAccount"])
