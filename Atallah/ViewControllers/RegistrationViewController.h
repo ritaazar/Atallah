@@ -11,7 +11,7 @@
 #import "AtallahNavigationController.h"
 #import "RegistrationInfo.h"
 
-@interface RegistrationViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, NSURLSessionDelegate>
+@interface RegistrationViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, NSURLSessionDelegate, DownPickerParentDelegate>
 {
     BOOL canDonate;
     NSMutableData *receiveData;

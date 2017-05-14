@@ -78,8 +78,8 @@
     [email setPlaceholder:@"Email Address"];
     
     [self setTextFieldStyle:job];
-    job.tag = 777;
     self.jobDownPicker = [[DownPicker alloc] initWithTextField:self.job withData:[RegistrationViewController getJobsList] withPlaceHolder:@"Job *"];
+    self.jobDownPicker.parentView = self;
     
     [self setTextFieldStyle:otherJobDescription];
     [otherJobDescription setPlaceholder:@"Other Job Description *"];
@@ -117,24 +117,22 @@
     checkBox.selected = YES;
     checkBox.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Checked.png"]];
     
-//    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-//    
-//    activityIndicator.center = self.view.center;
-//    [activityIndicator startAnimating];
-//    [self.view addSubview:activityIndicator];
-//    activityIndicator.hidden = YES;
-    
     if (_registrationInfo != nil)
     {
         [self editAccount:_registrationInfo];
     }
 }
 
--(void) textFieldDidEndEditing:(UITextField *)textField
+-(void) didSelectValue:(NSString *)selectedValue
 {
-    NSLog(@"textFieldDidEndEditing");
-    if(textField.tag == 777)
-        NSLog(@"Kher");
+    if ([selectedValue isEqualToString:@"Other"])
+    {
+        [otherJobDescription setHidden:NO];
+    }
+    else
+    {
+        [otherJobDescription setHidden:YES];
+    }
 }
 
 -(void) editAccount: (RegistrationInfo *) registrationInfo
@@ -513,6 +511,12 @@
     {
         NSAttributedString *str = [[NSAttributedString alloc] initWithString:@"Job *" attributes:@{ NSForegroundColorAttributeName : [UIColor redColor] }];
         job.attributedPlaceholder = str;
+        verified = NO;
+    }
+    if ([job.text isEqualToString:@"Other"] && [otherJobDescription.text isEqualToString:@""])
+    {
+        NSAttributedString *str = [[NSAttributedString alloc] initWithString:@"Other Job Description *" attributes:@{ NSForegroundColorAttributeName : [UIColor redColor] }];
+        otherJobDescription.attributedPlaceholder = str;
         verified = NO;
     }
     if ([bloodType.text isEqualToString:@""])

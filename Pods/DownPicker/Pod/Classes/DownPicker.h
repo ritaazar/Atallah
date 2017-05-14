@@ -11,6 +11,11 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DownPickerParentDelegate <NSObject>
+
+-(void) didSelectValue: (NSString *) selectedValue;
+
+@end
 @interface DownPicker : UIControl<UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 {
     UIPickerView* pickerView;
@@ -23,6 +28,7 @@
 	UIBarStyle toolbarStyle;
 }
 
+@property (nonatomic, strong) UIViewController<DownPickerParentDelegate> *parentView;
 @property (nonatomic) NSString* text;
 @property (nonatomic) NSInteger selectedIndex;
 

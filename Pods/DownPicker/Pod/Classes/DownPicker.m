@@ -200,6 +200,10 @@
 - (void)textFieldDidEndEditing:(UITextField *)aTextField {
     // [self doneClicked:aTextField];
     aTextField.userInteractionEnabled = YES;
+    if (_parentView != nil)
+    {
+        [_parentView didSelectValue:aTextField.text];
+    }
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
