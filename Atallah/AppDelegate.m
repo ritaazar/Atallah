@@ -134,6 +134,26 @@
     return strApplicationUUID;
 }
 
+-(void) initLoading
+{
+    self.loading=[[UIView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+    self.loading.backgroundColor = [UIColor colorWithRed:0.172 green:0.22 blue:0.239 alpha:0.3];
+    
+    self.loading.userInteractionEnabled=YES;
+    [self.loading setAutoresizingMask:
+     UIViewAutoresizingFlexibleLeftMargin|
+     UIViewAutoresizingFlexibleRightMargin|
+     UIViewAutoresizingFlexibleTopMargin|
+     UIViewAutoresizingFlexibleBottomMargin];
+    self.loading.hidden = YES;
+    UIActivityIndicatorView *activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    activity.center = self.loading.center;
+    [activity startAnimating];
+    [self.loading addSubview:activity];
+    
+    [self.window.rootViewController.view addSubview:self.loading];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

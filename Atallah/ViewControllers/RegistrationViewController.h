@@ -10,15 +10,15 @@
 #import "DownPicker.h"
 #import "AtallahNavigationController.h"
 #import "RegistrationInfo.h"
+#import "AppDelegate.h"
 
 @interface RegistrationViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, NSURLSessionDelegate, DownPickerParentDelegate>
 {
     BOOL canDonate;
     NSMutableData *receiveData;
     AtallahNavigationController *destinationView;
-    NSCondition *myCondition;
-    BOOL postDataIsDone;
     NSString *fullName;
+    AppDelegate *appDelegate;
 }
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollerView;

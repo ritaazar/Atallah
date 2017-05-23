@@ -47,6 +47,7 @@
 
 - (void)viewDidLoad
 {
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     [super viewDidLoad];
     
     [self initNavigation];
@@ -564,18 +565,15 @@
 {
     [self deleteExistingData];
     [self saveRegistrationInfo];
+    [self editAccountPost];
+
 }
 
 -(void)createAccount
 {
-    [self postDataToServer];
-    [myCondition lock];
-    while (!postDataIsDone)
-        [myCondition wait];
-    
     [self deleteExistingData];
     [self saveRegistrationInfo];
-    [myCondition unlock];
+    [self postDataToServer];
 }
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {
@@ -643,8 +641,7 @@
 
 -(void)postDataToServer
 {
-    [myCondition lock];
-
+    appDelegate.loading.hidden = NO;
     //TODO: fix the blood type that is being saved with "?" mark in sql server db
     
     NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://atallahmaronite.com/api/users/postperson"]];
@@ -689,17 +686,62 @@
                                                     NSLog(@"postDataToServer returned error code: %@", dataReturned);
                                                 }
                                                 [Answers logCustomEventWithName:fullName customAttributes:@{@"Post Returned Status":dataReturned}];
-                                                
-                                                postDataIsDone = YES;
-                                                [myCondition signal];
-                                                [myCondition unlock];
-                                                
-                                                //TODO: add activityIndicator
-//                                                dispatch_async(dispatch_get_main_queue(), ^{
-//                                                    NSLog(@"stopAnimating");
-//                                                    [activityIndicator stopAnimating];
-//                                                });
+                                                appDelegate.loading.hidden = YES;
                                             }];
+    
+    [task resume];
+    
+}
+
+-(void)editAccountPost
+{
+    appDelegate.loading.hidden = NO;
+    //TODO: fix the blood type that is being saved with "?" mark in sql server db
+    
+    NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://atallahmaronite.com/api/users/editperson"]];
+    [req setHTTPMethod:@"POST"];
+    NSString *lastNameText = lastName.text;
+    NSString *firstNameText = firstName.text;
+    NSString *middleNameText = middleName.text;
+    NSString *motherNameText = motherName.text;
+    NSString *motherLastNameText = motherLastName.text;
+    NSString *sexText = sex.text;
+    NSString *phoneNumberText = phoneNumber.text;
+    NSString *emailText = email.text;
+    NSString *jobText = job.text;
+    NSString *bloodTypeText = bloodType.text;
+    NSString *canDonateText = checkBox.selected ? @"YES" : @"NO";
+    NSString *addressText = address.text;
+    NSString *hometownText = hometown.text;
+    NSString *deviceID = [AppDelegate getDeviceUUID];
+    NSDictionary *dictionary = @{@"LastName":lastNameText, @"MiddleName":middleNameText, @"FirstName":firstNameText, @"MotherName":motherNameText, @"MotherLastName":motherLastNameText, @"Gender":sexText, @"MobileNumber":phoneNumberText, @"EmailAddress":emailText, @"Job":jobText, @"BloodType":bloodTypeText, @"CanDonate":canDonateText, @"Address":addressText, @"Hometown":hometownText, @"DeviceID":deviceID};
+    NSError *err;
+    NSData * jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:0 error:&err];
+    NSString * string = [[NSString alloc] initWithData:jsonData   encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",string);
+    
+    NSData *postData = [string dataUsingEncoding:NSASCIIStringEncoding];
+    
+    NSString *postLength = [NSString stringWithFormat:@"%lu",(unsigned long)[postData length]];
+    [req addValue:postLength forHTTPHeaderField:@"Content-Length"];
+    [req setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [req setHTTPBody:postData];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:req
+                                            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
+                                  {
+                                      //TODO: fix registration with no wifi(handle error code)
+                                      NSString *dataReturned = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                                      NSLog(@"editAccountPost returned data: %@", dataReturned);
+                                      if (error != nil)
+                                      {
+                                          NSInteger status = [error code];
+                                          dataReturned = [NSString stringWithFormat:@"%ld", (long)status];
+                                          NSLog(@"editAccountPost returned error code: %@", dataReturned);
+                                      }
+                                      [Answers logCustomEventWithName:fullName customAttributes:@{@"Edit Returned Status":dataReturned}];
+                                      appDelegate.loading.hidden = YES;
+                                  }];
     
     [task resume];
     

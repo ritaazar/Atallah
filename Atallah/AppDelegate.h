@@ -11,7 +11,7 @@
 #import <UserNotifications/UserNotifications.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UNUserNotificationCenterDelegate>
-
+@property (strong,nonatomic) UIView *loading;
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
