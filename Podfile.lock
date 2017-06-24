@@ -1,6 +1,6 @@
 PODS:
   - DownPicker (0.1.34)
-  - OneSignal (2.5.3)
+  - OneSignal (2.5.4)
 
 DEPENDENCIES:
   - DownPicker
@@ -8,8 +8,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   DownPicker: c00ea63f08ae82116cc93d0eba74e86bf3d4c68e
-  OneSignal: 08a57b17168033a3e8c635d676241eb07614a5e6
+  OneSignal: da994bcf6a2efbdceaf71e389e1d05245c562899
 
 PODFILE CHECKSUM: c704ae6b1873a5b83d97f05c57acee41f04b8cde
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.2.1

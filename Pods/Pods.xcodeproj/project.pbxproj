@@ -1,1635 +1,743 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>00E1C0AEB3DE46FF418BDE5276559A44</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>37494C8EA98E3CF04E0CE12FEED08B58</string>
-				<string>3B34367FF32A488206918972CBFFAEC8</string>
-				<string>99277C8FBFE98429785DA9786570371A</string>
-				<string>5D881922BF9EBE451FA364275A20BC09</string>
-				<string>070BD5C226FD02A02FC73F72E7A113A4</string>
-				<string>0C86CE0AC1C424FE546726BAA7BDAE76</string>
-				<string>B4AAFE5D02259E987790F60764C3FDBA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Atallah</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Atallah</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0101C0A39A73401C93F2F5F4F89D3BD5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>043049138976DDC2EEAEE1B24F4A24D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>014E5525CB032A9216BF09E8B70D32E1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1FA51C790EB24F82C364F3CCA23EE488</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>043049138976DDC2EEAEE1B24F4A24D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>downArrow@3x.png</string>
-			<key>path</key>
-			<string>Pod/Assets/downArrow@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>070BD5C226FD02A02FC73F72E7A113A4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Atallah-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0873B6CD05F18D7C4F6A42709B9AD2A0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-OneSignalNotificationServiceExtension.a</string>
-			<key>path</key>
-			<string>libPods-OneSignalNotificationServiceExtension.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0C86CE0AC1C424FE546726BAA7BDAE76</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Atallah.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E55237DDE99348BFD588411B6149F1F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIDownPicker.h</string>
-			<key>path</key>
-			<string>Pod/Classes/UIDownPicker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0FCC9173B4A145800C6E04BE182324AD</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C49D5E2A9ED7774215BC7B88BECBC69C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/DownPicker/DownPicker-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>1022BECBEC008B934C85B2AF420E15F1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIDownPicker.m</string>
-			<key>path</key>
-			<string>Pod/Classes/UIDownPicker.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>134130127FA1C10F58828F5366D811DD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>65351C7C535F7CC120FA40D7A7050F8D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>14D2F2C7995080A8E20BBE51D9D0C391</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-OneSignalNotificationServiceExtension-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1D6021DEC82C1ED6AA9BB3CCEE0A26B5</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2E722EEECC1CA3640CB75AF7525AAA80</string>
-				<string>5A32C574778195F25666CF58A4350AA8</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>1EEA206BCC184768E61B7EEF9CBEC626</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9BC09E797FB62F687775D8B0EBF6B74A</string>
-				<string>947A0BB158CD523551E7591C6C98AF4E</string>
-				<string>0101C0A39A73401C93F2F5F4F89D3BD5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1F116325D7588F16E71E515C7E723DCB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9395569C1D7001A21AF6AE476ABF24E5</string>
-			<key>buildPhases</key>
-			<array>
-				<string>2248A93A2275B226522349E723518C2C</string>
-				<string>E75363A1077057B86E45E1FCAC6DCBE8</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>9565ECB410718071CC1E71FF0FD24069</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Atallah</string>
-			<key>productName</key>
-			<string>Pods-Atallah</string>
-			<key>productReference</key>
-			<string>E76C68FBEECA16B10ED78683FA843AB9</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>1FA51C790EB24F82C364F3CCA23EE488</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DownPicker-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>20ADDAC04DAD914EFE359BC8A6128A5A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2789BF063013CEC22F5F3CA367F00CD2</string>
-				<string>DEA4FE3CF0F1516D781E354EE2B34DCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>21F9B4ACA62B2C660EE4E16E6B96D470</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C49D5E2A9ED7774215BC7B88BECBC69C</string>
-				<string>1FA51C790EB24F82C364F3CCA23EE488</string>
-				<string>5A83FFA7B9132CC5F7026EC2D36B8CFA</string>
-				<string>EA00D58AFFA290EA2C2C9DF9A56FA49F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/DownPicker</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2248A93A2275B226522349E723518C2C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>705E9635F614F90D7BED4E97D1FDE8A7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>25E7D17DFA6AAE4F5B2C9CC542EB4475</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>OneSignal.framework</string>
-			<key>path</key>
-			<string>iOS_SDK/OneSignalSDK/Framework/OneSignal.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2729AD5EB38D666FEFB4006CBBB18B44</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DownPicker.h</string>
-			<key>path</key>
-			<string>Pod/Classes/DownPicker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2789BF063013CEC22F5F3CA367F00CD2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2729AD5EB38D666FEFB4006CBBB18B44</string>
-				<string>B8366E32DB870A9C56A1EA73047F2FCF</string>
-				<string>0E55237DDE99348BFD588411B6149F1F</string>
-				<string>1022BECBEC008B934C85B2AF420E15F1</string>
-				<string>3E5A207E0B367DEA49DEEDEB0EE85326</string>
-				<string>21F9B4ACA62B2C660EE4E16E6B96D470</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DownPicker</string>
-			<key>path</key>
-			<string>DownPicker</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>29F0EE7FBCD6EEC78AA4D742F089D3D1</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1D6021DEC82C1ED6AA9BB3CCEE0A26B5</string>
-			<key>buildPhases</key>
-			<array>
-				<string>134130127FA1C10F58828F5366D811DD</string>
-				<string>B1C9C326682B0517112DFDA9629C107C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-OneSignalNotificationServiceExtension</string>
-			<key>productName</key>
-			<string>Pods-OneSignalNotificationServiceExtension</string>
-			<key>productReference</key>
-			<string>0873B6CD05F18D7C4F6A42709B9AD2A0</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>59B042A655B7C20CBAB90E385BF4E4C7</string>
-				<string>B7324857C38B065FEB1EEE3105C2367A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2E722EEECC1CA3640CB75AF7525AAA80</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F01CCFD310B15717DC1F39EBF56B3864</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>APPLICATION_EXTENSION_API_ONLY</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.2</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>37494C8EA98E3CF04E0CE12FEED08B58</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Atallah-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B34367FF32A488206918972CBFFAEC8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Atallah-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E5A207E0B367DEA49DEEDEB0EE85326</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5D54651B0DFB3BD055D4E6EA6D350C9A</string>
-				<string>44E8CB384C278316D1E32D24BA911410</string>
-				<string>043049138976DDC2EEAEE1B24F4A24D5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>44E8CB384C278316D1E32D24BA911410</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>downArrow@2x.png</string>
-			<key>path</key>
-			<string>Pod/Assets/downArrow@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45D671572B80A51623F7B329540D45EA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>014E5525CB032A9216BF09E8B70D32E1</string>
-				<string>5FF4B8B2D58AA256637BD1138040B3BF</string>
-				<string>7BBEF109FBC7B1AB97F0F394419055F2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>499CE0EECFB09B3147F996A95FD2B029</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-OneSignalNotificationServiceExtension-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>516687E25B679D48EF28BDB5A1AB3F21</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-OneSignalNotificationServiceExtension-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>59B042A655B7C20CBAB90E385BF4E4C7</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGNING_REQUIRED</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_DEBUG=1</string>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>PROVISIONING_PROFILE_SPECIFIER</key>
-				<string>NO_SIGNING/</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>5A32C574778195F25666CF58A4350AA8</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DBF78940D80996F5D4DB4B92D3D90F7F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>APPLICATION_EXTENSION_API_ONLY</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.2</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>5A83FFA7B9132CC5F7026EC2D36B8CFA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DownPicker-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C05FADE30EF910B83CBF24CED9FD2F6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>8182D78D9D355B924FBD54919BE85571</string>
-			<key>buildPhases</key>
-			<array>
-				<string>45D671572B80A51623F7B329540D45EA</string>
-				<string>A3C5FF4E7950A920AF3ED5D856E3F71E</string>
-				<string>6DCA7CC24D071C8CB9EBB6DDB2014891</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E9271D62982547C0402FE53675002B61</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>DownPicker</string>
-			<key>productName</key>
-			<string>DownPicker</string>
-			<key>productReference</key>
-			<string>6F1AD5BB49E0C0A7B2271CAEDC38AE19</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>5D54651B0DFB3BD055D4E6EA6D350C9A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>downArrow.png</string>
-			<key>path</key>
-			<string>Pod/Assets/downArrow.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5D881922BF9EBE451FA364275A20BC09</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Atallah-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5FF4B8B2D58AA256637BD1138040B3BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B8366E32DB870A9C56A1EA73047F2FCF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>65351C7C535F7CC120FA40D7A7050F8D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>516687E25B679D48EF28BDB5A1AB3F21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A0362732490250881C85BC13B0F0914</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0C86CE0AC1C424FE546726BAA7BDAE76</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6C1C9B360202F23823D8A62938C77624</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>898E0D3FC3F77FBA2790348D48C56868</string>
-				<string>499CE0EECFB09B3147F996A95FD2B029</string>
-				<string>516687E25B679D48EF28BDB5A1AB3F21</string>
-				<string>14D2F2C7995080A8E20BBE51D9D0C391</string>
-				<string>F01CCFD310B15717DC1F39EBF56B3864</string>
-				<string>DBF78940D80996F5D4DB4B92D3D90F7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-OneSignalNotificationServiceExtension</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-OneSignalNotificationServiceExtension</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C79F4747BDA4565A88E05423220D6B5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6DCA7CC24D071C8CB9EBB6DDB2014891</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EBABDD0769F96BA5F348EBA6CB5FCC1C</string>
-				<string>9789FAE9034342E14AF81F0BE0E17301</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6F1AD5BB49E0C0A7B2271CAEDC38AE19</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libDownPicker.a</string>
-			<key>path</key>
-			<string>libDownPicker.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>705E9635F614F90D7BED4E97D1FDE8A7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>99277C8FBFE98429785DA9786570371A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7A942CD2E83954333F3865369F21B9D4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B4173259294719E6F6BD31EF7D86F607</string>
-				<string>6F1AD5BB49E0C0A7B2271CAEDC38AE19</string>
-				<string>E76C68FBEECA16B10ED78683FA843AB9</string>
-				<string>0873B6CD05F18D7C4F6A42709B9AD2A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7BBEF109FBC7B1AB97F0F394419055F2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1022BECBEC008B934C85B2AF420E15F1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7BD368F35F1AB9B2D2267664FB796768</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>25E7D17DFA6AAE4F5B2C9CC542EB4475</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>20ADDAC04DAD914EFE359BC8A6128A5A</string>
-				<string>7A942CD2E83954333F3865369F21B9D4</string>
-				<string>ACF03B6237C07645D592BACB679BAD4B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8182D78D9D355B924FBD54919BE85571</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>99C6495D8A4F1A0E3D4EA38A24CF3A3F</string>
-				<string>0FCC9173B4A145800C6E04BE182324AD</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>822A47C0607CF2D644E17031772A426B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FD3DBB095D193484DDB08BB8B89F946A</string>
-				<string>E388BE5873FFA3471E01344FF29A36A4</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>85E6BF901AFB9539F1E915FBCBC4D256</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B4AAFE5D02259E987790F60764C3FDBA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>898E0D3FC3F77FBA2790348D48C56868</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>926A84365F6B93264AF882DA49B7E685</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>822A47C0607CF2D644E17031772A426B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>FEACACBE0C1329C20CE90BD263E20826</string>
-				<string>989843565B8B69CA4515FCC0A30795C6</string>
-				<string>1EEA206BCC184768E61B7EEF9CBEC626</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>DownPicker-DownPicker</string>
-			<key>productName</key>
-			<string>DownPicker-DownPicker</string>
-			<key>productReference</key>
-			<string>B4173259294719E6F6BD31EF7D86F607</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>9395569C1D7001A21AF6AE476ABF24E5</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6A0362732490250881C85BC13B0F0914</string>
-				<string>85E6BF901AFB9539F1E915FBCBC4D256</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>text.script.ruby</string>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>947A0BB158CD523551E7591C6C98AF4E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>44E8CB384C278316D1E32D24BA911410</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9565ECB410718071CC1E71FF0FD24069</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>DownPicker</string>
-			<key>target</key>
-			<string>5C05FADE30EF910B83CBF24CED9FD2F6</string>
-			<key>targetProxy</key>
-			<string>A72C0F033FC6AE15431DC395E8D34F7C</string>
-		</dict>
-		<key>9789FAE9034342E14AF81F0BE0E17301</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0E55237DDE99348BFD588411B6149F1F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>989843565B8B69CA4515FCC0A30795C6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>99277C8FBFE98429785DA9786570371A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Atallah-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>99C6495D8A4F1A0E3D4EA38A24CF3A3F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C49D5E2A9ED7774215BC7B88BECBC69C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string></string>
-				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
-				<string></string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/DownPicker/DownPicker-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9BC09E797FB62F687775D8B0EBF6B74A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5D54651B0DFB3BD055D4E6EA6D350C9A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3C5FF4E7950A920AF3ED5D856E3F71E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CC18574A405D1F583240B038C5FEFEAC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A72C0F033FC6AE15431DC395E8D34F7C</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>5C05FADE30EF910B83CBF24CED9FD2F6</string>
-			<key>remoteInfo</key>
-			<string>DownPicker</string>
-		</dict>
-		<key>A9A610691504346A3D78DA4F78E96ECC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ACF03B6237C07645D592BACB679BAD4B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00E1C0AEB3DE46FF418BDE5276559A44</string>
-				<string>6C1C9B360202F23823D8A62938C77624</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B1C9C326682B0517112DFDA9629C107C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6C79F4747BDA4565A88E05423220D6B5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B4173259294719E6F6BD31EF7D86F607</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>DownPicker.bundle</string>
-			<key>path</key>
-			<string>DownPicker.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B4AAFE5D02259E987790F60764C3FDBA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Atallah.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B7324857C38B065FEB1EEE3105C2367A</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGNING_REQUIRED</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_RELEASE=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>PROVISIONING_PROFILE_SPECIFIER</key>
-				<string>NO_SIGNING/</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B8366E32DB870A9C56A1EA73047F2FCF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>DownPicker.m</string>
-			<key>path</key>
-			<string>Pod/Classes/DownPicker.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C49D5E2A9ED7774215BC7B88BECBC69C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>DownPicker.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC18574A405D1F583240B038C5FEFEAC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>7A942CD2E83954333F3865369F21B9D4</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>5C05FADE30EF910B83CBF24CED9FD2F6</string>
-				<string>926A84365F6B93264AF882DA49B7E685</string>
-				<string>1F116325D7588F16E71E515C7E723DCB</string>
-				<string>29F0EE7FBCD6EEC78AA4D742F089D3D1</string>
-			</array>
-		</dict>
-		<key>D6A55142D4153B6ECDB2A2E9DBEAA754</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>926A84365F6B93264AF882DA49B7E685</string>
-			<key>remoteInfo</key>
-			<string>DownPicker-DownPicker</string>
-		</dict>
-		<key>DBF78940D80996F5D4DB4B92D3D90F7F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-OneSignalNotificationServiceExtension.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DEA4FE3CF0F1516D781E354EE2B34DCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7BD368F35F1AB9B2D2267664FB796768</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>OneSignal</string>
-			<key>path</key>
-			<string>OneSignal</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E388BE5873FFA3471E01344FF29A36A4</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C49D5E2A9ED7774215BC7B88BECBC69C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CONFIGURATION_BUILD_DIR</key>
-				<string>$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DownPicker</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/DownPicker/ResourceBundle-DownPicker-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>DownPicker</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E75363A1077057B86E45E1FCAC6DCBE8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A9A610691504346A3D78DA4F78E96ECC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E76C68FBEECA16B10ED78683FA843AB9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-Atallah.a</string>
-			<key>path</key>
-			<string>libPods-Atallah.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E9271D62982547C0402FE53675002B61</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>DownPicker-DownPicker</string>
-			<key>target</key>
-			<string>926A84365F6B93264AF882DA49B7E685</string>
-			<key>targetProxy</key>
-			<string>D6A55142D4153B6ECDB2A2E9DBEAA754</string>
-		</dict>
-		<key>EA00D58AFFA290EA2C2C9DF9A56FA49F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>ResourceBundle-DownPicker-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EBABDD0769F96BA5F348EBA6CB5FCC1C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2729AD5EB38D666FEFB4006CBBB18B44</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>F01CCFD310B15717DC1F39EBF56B3864</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-OneSignalNotificationServiceExtension.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FD3DBB095D193484DDB08BB8B89F946A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C49D5E2A9ED7774215BC7B88BECBC69C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CONFIGURATION_BUILD_DIR</key>
-				<string>$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DownPicker</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/DownPicker/ResourceBundle-DownPicker-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>DownPicker</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FEACACBE0C1329C20CE90BD263E20826</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17A238D0A7856A3A49985544C208AB2C /* downArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DD70B0540309608418123D6612E9CD0 /* downArrow@2x.png */; };
+		1E879149EBAD464755EE1F40655D6382 /* DownPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2729AD5EB38D666FEFB4006CBBB18B44 /* DownPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3776FB7CC394057D437EF33E47B09BB2 /* downArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 723147E5A0061EFC52443AAC07BB476B /* downArrow@3x.png */; };
+		4990087227F70FFD1732427A82B4DD53 /* DownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B8366E32DB870A9C56A1EA73047F2FCF /* DownPicker.m */; };
+		4DF7DA41F81B7BA608502EC6BBBA2674 /* UIDownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022BECBEC008B934C85B2AF420E15F1 /* UIDownPicker.m */; };
+		90F0CE3A113ADDA62D7E9B6065CCB63B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9D287EA7C5BDAE1C630F5ECDFAEA2E14 /* Pods-Atallah-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99277C8FBFE98429785DA9786570371A /* Pods-Atallah-dummy.m */; };
+		AFCE316733B815E5146B42C37A7513EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B0D3A442D95D6E64B0C70159BDD50E1F /* Pods-OneSignalNotificationServiceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 516687E25B679D48EF28BDB5A1AB3F21 /* Pods-OneSignalNotificationServiceExtension-dummy.m */; };
+		E42EE4FE1DD37C7DBA95A56041C71B5E /* UIDownPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E55237DDE99348BFD588411B6149F1F /* UIDownPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57B4D31BDC94D4819159C63F8B0F195 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 479BA885F187F317308A62C2511E2386 /* downArrow.png */; };
+		E6E1D4D3CAB52D825F18034C1CF5284A /* DownPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA51C790EB24F82C364F3CCA23EE488 /* DownPicker-dummy.m */; };
+		FE43E4B58FE1453809AFD329B92EF945 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		949FB03DB4E60F4F8CC5AC2BD8928C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DD9921D25EA0C0991BA20E93823D620;
+			remoteInfo = DownPicker;
+		};
+		B03FEF97E39F0BD7619626AFE8A7EE93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48AE03F598A6109CB2827ACB2BDF1F65;
+			remoteInfo = "DownPicker-DownPicker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		070BD5C226FD02A02FC73F72E7A113A4 /* Pods-Atallah-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Atallah-resources.sh"; sourceTree = "<group>"; };
+		0873B6CD05F18D7C4F6A42709B9AD2A0 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-OneSignalNotificationServiceExtension.a"; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C86CE0AC1C424FE546726BAA7BDAE76 /* Pods-Atallah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Atallah.debug.xcconfig"; sourceTree = "<group>"; };
+		0E55237DDE99348BFD588411B6149F1F /* UIDownPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIDownPicker.h; path = Pod/Classes/UIDownPicker.h; sourceTree = "<group>"; };
+		1022BECBEC008B934C85B2AF420E15F1 /* UIDownPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIDownPicker.m; path = Pod/Classes/UIDownPicker.m; sourceTree = "<group>"; };
+		14D2F2C7995080A8E20BBE51D9D0C391 /* Pods-OneSignalNotificationServiceExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OneSignalNotificationServiceExtension-resources.sh"; sourceTree = "<group>"; };
+		1FA51C790EB24F82C364F3CCA23EE488 /* DownPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DownPicker-dummy.m"; sourceTree = "<group>"; };
+		25E7D17DFA6AAE4F5B2C9CC542EB4475 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
+		2729AD5EB38D666FEFB4006CBBB18B44 /* DownPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DownPicker.h; path = Pod/Classes/DownPicker.h; sourceTree = "<group>"; };
+		37494C8EA98E3CF04E0CE12FEED08B58 /* Pods-Atallah-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Atallah-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B34367FF32A488206918972CBFFAEC8 /* Pods-Atallah-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Atallah-acknowledgements.plist"; sourceTree = "<group>"; };
+		479BA885F187F317308A62C2511E2386 /* downArrow.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = downArrow.png; path = Pod/Assets/downArrow.png; sourceTree = "<group>"; };
+		499CE0EECFB09B3147F996A95FD2B029 /* Pods-OneSignalNotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OneSignalNotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		516687E25B679D48EF28BDB5A1AB3F21 /* Pods-OneSignalNotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OneSignalNotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
+		5A83FFA7B9132CC5F7026EC2D36B8CFA /* DownPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DownPicker-prefix.pch"; sourceTree = "<group>"; };
+		5D881922BF9EBE451FA364275A20BC09 /* Pods-Atallah-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Atallah-frameworks.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6F1AD5BB49E0C0A7B2271CAEDC38AE19 /* libDownPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDownPicker.a; path = libDownPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		723147E5A0061EFC52443AAC07BB476B /* downArrow@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "downArrow@3x.png"; path = "Pod/Assets/downArrow@3x.png"; sourceTree = "<group>"; };
+		898E0D3FC3F77FBA2790348D48C56868 /* Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99277C8FBFE98429785DA9786570371A /* Pods-Atallah-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Atallah-dummy.m"; sourceTree = "<group>"; };
+		9DD70B0540309608418123D6612E9CD0 /* downArrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "downArrow@2x.png"; path = "Pod/Assets/downArrow@2x.png"; sourceTree = "<group>"; };
+		B4173259294719E6F6BD31EF7D86F607 /* DownPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DownPicker.bundle; path = DownPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AAFE5D02259E987790F60764C3FDBA /* Pods-Atallah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Atallah.release.xcconfig"; sourceTree = "<group>"; };
+		B8366E32DB870A9C56A1EA73047F2FCF /* DownPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DownPicker.m; path = Pod/Classes/DownPicker.m; sourceTree = "<group>"; };
+		C49D5E2A9ED7774215BC7B88BECBC69C /* DownPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DownPicker.xcconfig; sourceTree = "<group>"; };
+		DBF78940D80996F5D4DB4B92D3D90F7F /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		E76C68FBEECA16B10ED78683FA843AB9 /* libPods-Atallah.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Atallah.a"; path = "libPods-Atallah.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA00D58AFFA290EA2C2C9DF9A56FA49F /* ResourceBundle-DownPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DownPicker-Info.plist"; sourceTree = "<group>"; };
+		F01CCFD310B15717DC1F39EBF56B3864 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03C93D423468674A018868F51E56F379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0925FF853F9EA8C24BB60224A20AF575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F0CE3A113ADDA62D7E9B6065CCB63B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43495EEB6258C9D3F86D099BD3BB691D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE43E4B58FE1453809AFD329B92EF945 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96592CCE495D554DC738711182B816E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCE316733B815E5146B42C37A7513EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E1C0AEB3DE46FF418BDE5276559A44 /* Pods-Atallah */ = {
+			isa = PBXGroup;
+			children = (
+				37494C8EA98E3CF04E0CE12FEED08B58 /* Pods-Atallah-acknowledgements.markdown */,
+				3B34367FF32A488206918972CBFFAEC8 /* Pods-Atallah-acknowledgements.plist */,
+				99277C8FBFE98429785DA9786570371A /* Pods-Atallah-dummy.m */,
+				5D881922BF9EBE451FA364275A20BC09 /* Pods-Atallah-frameworks.sh */,
+				070BD5C226FD02A02FC73F72E7A113A4 /* Pods-Atallah-resources.sh */,
+				0C86CE0AC1C424FE546726BAA7BDAE76 /* Pods-Atallah.debug.xcconfig */,
+				B4AAFE5D02259E987790F60764C3FDBA /* Pods-Atallah.release.xcconfig */,
+			);
+			name = "Pods-Atallah";
+			path = "Target Support Files/Pods-Atallah";
+			sourceTree = "<group>";
+		};
+		11ACC8003B4676D48B8EA2295D225813 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				479BA885F187F317308A62C2511E2386 /* downArrow.png */,
+				9DD70B0540309608418123D6612E9CD0 /* downArrow@2x.png */,
+				723147E5A0061EFC52443AAC07BB476B /* downArrow@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20ADDAC04DAD914EFE359BC8A6128A5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2789BF063013CEC22F5F3CA367F00CD2 /* DownPicker */,
+				DEA4FE3CF0F1516D781E354EE2B34DCB /* OneSignal */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		21F9B4ACA62B2C660EE4E16E6B96D470 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C49D5E2A9ED7774215BC7B88BECBC69C /* DownPicker.xcconfig */,
+				1FA51C790EB24F82C364F3CCA23EE488 /* DownPicker-dummy.m */,
+				5A83FFA7B9132CC5F7026EC2D36B8CFA /* DownPicker-prefix.pch */,
+				EA00D58AFFA290EA2C2C9DF9A56FA49F /* ResourceBundle-DownPicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DownPicker";
+			sourceTree = "<group>";
+		};
+		2789BF063013CEC22F5F3CA367F00CD2 /* DownPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2729AD5EB38D666FEFB4006CBBB18B44 /* DownPicker.h */,
+				B8366E32DB870A9C56A1EA73047F2FCF /* DownPicker.m */,
+				0E55237DDE99348BFD588411B6149F1F /* UIDownPicker.h */,
+				1022BECBEC008B934C85B2AF420E15F1 /* UIDownPicker.m */,
+				11ACC8003B4676D48B8EA2295D225813 /* Resources */,
+				21F9B4ACA62B2C660EE4E16E6B96D470 /* Support Files */,
+			);
+			name = DownPicker;
+			path = DownPicker;
+			sourceTree = "<group>";
+		};
+		6C1C9B360202F23823D8A62938C77624 /* Pods-OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				898E0D3FC3F77FBA2790348D48C56868 /* Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown */,
+				499CE0EECFB09B3147F996A95FD2B029 /* Pods-OneSignalNotificationServiceExtension-acknowledgements.plist */,
+				516687E25B679D48EF28BDB5A1AB3F21 /* Pods-OneSignalNotificationServiceExtension-dummy.m */,
+				14D2F2C7995080A8E20BBE51D9D0C391 /* Pods-OneSignalNotificationServiceExtension-resources.sh */,
+				F01CCFD310B15717DC1F39EBF56B3864 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				DBF78940D80996F5D4DB4B92D3D90F7F /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = "Pods-OneSignalNotificationServiceExtension";
+			path = "Target Support Files/Pods-OneSignalNotificationServiceExtension";
+			sourceTree = "<group>";
+		};
+		7A942CD2E83954333F3865369F21B9D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4173259294719E6F6BD31EF7D86F607 /* DownPicker.bundle */,
+				6F1AD5BB49E0C0A7B2271CAEDC38AE19 /* libDownPicker.a */,
+				E76C68FBEECA16B10ED78683FA843AB9 /* libPods-Atallah.a */,
+				0873B6CD05F18D7C4F6A42709B9AD2A0 /* libPods-OneSignalNotificationServiceExtension.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BD368F35F1AB9B2D2267664FB796768 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25E7D17DFA6AAE4F5B2C9CC542EB4475 /* OneSignal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				20ADDAC04DAD914EFE359BC8A6128A5A /* Pods */,
+				7A942CD2E83954333F3865369F21B9D4 /* Products */,
+				ACF03B6237C07645D592BACB679BAD4B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ACF03B6237C07645D592BACB679BAD4B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E1C0AEB3DE46FF418BDE5276559A44 /* Pods-Atallah */,
+				6C1C9B360202F23823D8A62938C77624 /* Pods-OneSignalNotificationServiceExtension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DEA4FE3CF0F1516D781E354EE2B34DCB /* OneSignal */ = {
+			isa = PBXGroup;
+			children = (
+				7BD368F35F1AB9B2D2267664FB796768 /* Frameworks */,
+			);
+			name = OneSignal;
+			path = OneSignal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1AA939437C0C16EEED8A51CD6A737FF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E879149EBAD464755EE1F40655D6382 /* DownPicker.h in Headers */,
+				E42EE4FE1DD37C7DBA95A56041C71B5E /* UIDownPicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		48AE03F598A6109CB2827ACB2BDF1F65 /* DownPicker-DownPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF11D1E674315BFD275021D33EE9CB6 /* Build configuration list for PBXNativeTarget "DownPicker-DownPicker" */;
+			buildPhases = (
+				41F533B6D79B8FC2766E569F98089088 /* Sources */,
+				03C93D423468674A018868F51E56F379 /* Frameworks */,
+				DC8525F9869462FCDC4149971C33DD61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DownPicker-DownPicker";
+			productName = "DownPicker-DownPicker";
+			productReference = B4173259294719E6F6BD31EF7D86F607 /* DownPicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4C91F21CD6F5C81D14D962A1E78C8445 /* Pods-OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EBC95E57292665A8333DDF483B6BAD /* Build configuration list for PBXNativeTarget "Pods-OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				77B64DF1B19FB53649FFCA9DFFF0F1EF /* Sources */,
+				96592CCE495D554DC738711182B816E3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OneSignalNotificationServiceExtension";
+			productName = "Pods-OneSignalNotificationServiceExtension";
+			productReference = 0873B6CD05F18D7C4F6A42709B9AD2A0 /* libPods-OneSignalNotificationServiceExtension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9DD9921D25EA0C0991BA20E93823D620 /* DownPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E693C3F86BF407820032D10FBFF5BD1 /* Build configuration list for PBXNativeTarget "DownPicker" */;
+			buildPhases = (
+				C9C99C42DBEDCDFF4E594E9E7A6C1FF1 /* Sources */,
+				43495EEB6258C9D3F86D099BD3BB691D /* Frameworks */,
+				1AA939437C0C16EEED8A51CD6A737FF2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B6EE3BEB6E89D57CE2D28FC8FFBA257 /* PBXTargetDependency */,
+			);
+			name = DownPicker;
+			productName = DownPicker;
+			productReference = 6F1AD5BB49E0C0A7B2271CAEDC38AE19 /* libDownPicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EF51360F50726D050B85A40C2FBC8E71 /* Pods-Atallah */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CA54F0B048EA99D28C777C9C741EB5 /* Build configuration list for PBXNativeTarget "Pods-Atallah" */;
+			buildPhases = (
+				DD779D46B234F326463C76186A35562C /* Sources */,
+				0925FF853F9EA8C24BB60224A20AF575 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEB171D633F633FC6079037612BFA759 /* PBXTargetDependency */,
+			);
+			name = "Pods-Atallah";
+			productName = "Pods-Atallah";
+			productReference = E76C68FBEECA16B10ED78683FA843AB9 /* libPods-Atallah.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7A942CD2E83954333F3865369F21B9D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DD9921D25EA0C0991BA20E93823D620 /* DownPicker */,
+				48AE03F598A6109CB2827ACB2BDF1F65 /* DownPicker-DownPicker */,
+				EF51360F50726D050B85A40C2FBC8E71 /* Pods-Atallah */,
+				4C91F21CD6F5C81D14D962A1E78C8445 /* Pods-OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC8525F9869462FCDC4149971C33DD61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57B4D31BDC94D4819159C63F8B0F195 /* downArrow.png in Resources */,
+				17A238D0A7856A3A49985544C208AB2C /* downArrow@2x.png in Resources */,
+				3776FB7CC394057D437EF33E47B09BB2 /* downArrow@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41F533B6D79B8FC2766E569F98089088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B64DF1B19FB53649FFCA9DFFF0F1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D3A442D95D6E64B0C70159BDD50E1F /* Pods-OneSignalNotificationServiceExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C99C42DBEDCDFF4E594E9E7A6C1FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E1D4D3CAB52D825F18034C1CF5284A /* DownPicker-dummy.m in Sources */,
+				4990087227F70FFD1732427A82B4DD53 /* DownPicker.m in Sources */,
+				4DF7DA41F81B7BA608502EC6BBBA2674 /* UIDownPicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD779D46B234F326463C76186A35562C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D287EA7C5BDAE1C630F5ECDFAEA2E14 /* Pods-Atallah-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B6EE3BEB6E89D57CE2D28FC8FFBA257 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DownPicker-DownPicker";
+			target = 48AE03F598A6109CB2827ACB2BDF1F65 /* DownPicker-DownPicker */;
+			targetProxy = B03FEF97E39F0BD7619626AFE8A7EE93 /* PBXContainerItemProxy */;
+		};
+		EEB171D633F633FC6079037612BFA759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DownPicker;
+			target = 9DD9921D25EA0C0991BA20E93823D620 /* DownPicker */;
+			targetProxy = 949FB03DB4E60F4F8CC5AC2BD8928C21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ED450B07FBDF0C036DC9E045C773D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01CCFD310B15717DC1F39EBF56B3864 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3EB50D33AEDB8AC2796B0CF7E8F2480E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C86CE0AC1C424FE546726BAA7BDAE76 /* Pods-Atallah.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		61826258027670AEE86C98B4E3C4D997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49D5E2A9ED7774215BC7B88BECBC69C /* DownPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DownPicker/DownPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6A4C845F4BA8A5225F1D74C4496FF4B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF78940D80996F5D4DB4B92D3D90F7F /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BD98A792A11D217AB0C33AC654789EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49D5E2A9ED7774215BC7B88BECBC69C /* DownPicker.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DownPicker";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/DownPicker/ResourceBundle-DownPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = DownPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C51B200F4B3AD37818E6DEDFC9778D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4AAFE5D02259E987790F60764C3FDBA /* Pods-Atallah.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D5D1D325AEA35509B29642C26A264FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49D5E2A9ED7774215BC7B88BECBC69C /* DownPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DownPicker/DownPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DFCF84940A4EF5C3300FD1BE90B80F4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49D5E2A9ED7774215BC7B88BECBC69C /* DownPicker.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DownPicker";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/DownPicker/ResourceBundle-DownPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = DownPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CF11D1E674315BFD275021D33EE9CB6 /* Build configuration list for PBXNativeTarget "DownPicker-DownPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFCF84940A4EF5C3300FD1BE90B80F4C /* Debug */,
+				BD98A792A11D217AB0C33AC654789EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71CA54F0B048EA99D28C777C9C741EB5 /* Build configuration list for PBXNativeTarget "Pods-Atallah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB50D33AEDB8AC2796B0CF7E8F2480E /* Debug */,
+				C51B200F4B3AD37818E6DEDFC9778D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E693C3F86BF407820032D10FBFF5BD1 /* Build configuration list for PBXNativeTarget "DownPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61826258027670AEE86C98B4E3C4D997 /* Debug */,
+				D5D1D325AEA35509B29642C26A264FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0EBC95E57292665A8333DDF483B6BAD /* Build configuration list for PBXNativeTarget "Pods-OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED450B07FBDF0C036DC9E045C773D1A /* Debug */,
+				6A4C845F4BA8A5225F1D74C4496FF4B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
