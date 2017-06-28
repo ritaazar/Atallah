@@ -11,6 +11,8 @@
 		35F6494F1EC74DF200E7712E /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 35F649471EC74DF200E7712E /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9EC1A8B036263F6BEB8A8FD6 /* libPods-Atallah.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF6CA31F6CCF64E1B219B40 /* libPods-Atallah.a */; };
 		D02CA97B054B10B7264DCBD7 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 379B6EFFBB662C594C066E19 /* libPods-OneSignalNotificationServiceExtension.a */; };
+		E6A0ADA41F03DCC500FDAE67 /* RegistrationInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A0ADA31F03DCC500FDAE67 /* RegistrationInfo+CoreDataProperties.m */; };
+		E6A0ADA71F03DCD000FDAE67 /* RegistrationInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A0ADA61F03DCD000FDAE67 /* RegistrationInfo+CoreDataClass.m */; };
 		FA0E161E1E05E1DE00D18035 /* NotificationInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0E161B1E05E1DE00D18035 /* NotificationInfo+CoreDataClass.m */; };
 		FA0E161F1E05E1DE00D18035 /* NotificationInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0E161D1E05E1DE00D18035 /* NotificationInfo+CoreDataProperties.m */; };
 		FA24C1BA1E092569005923C3 /* NotificationDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24C1B81E092569005923C3 /* NotificationDateViewController.m */; };
@@ -23,8 +25,6 @@
 		FA7C90851DFC86030046F836 /* AttalahMaronite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA7C90461DFC86030046F836 /* AttalahMaronite.xcdatamodeld */; };
 		FA7C90861DFC86030046F836 /* Member+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C90491DFC86030046F836 /* Member+CoreDataProperties.m */; };
 		FA7C90871DFC86030046F836 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C904B1DFC86030046F836 /* Member.m */; };
-		FA7C90881DFC86030046F836 /* RegistrationInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C904D1DFC86030046F836 /* RegistrationInfo+CoreDataProperties.m */; };
-		FA7C90891DFC86030046F836 /* RegistrationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C904F1DFC86030046F836 /* RegistrationInfo.m */; };
 		FA7C908A1DFC86030046F836 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA7C90631DFC86030046F836 /* GoogleService-Info.plist */; };
 		FA7C908C1DFC86030046F836 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C90651DFC86030046F836 /* main.m */; };
 		FA7C908D1DFC86030046F836 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C90681DFC86030046F836 /* UICKeyChainStore.m */; };
@@ -79,6 +79,11 @@
 		35F6494C1EC74DF200E7712E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		379B6EFFBB662C594C066E19 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6561AF1AD72A3E39540D2C74 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		E6A0ADA11F03DC6900FDAE67 /* AttalahMaronite_1.9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AttalahMaronite_1.9.xcdatamodel; sourceTree = "<group>"; };
+		E6A0ADA21F03DCC500FDAE67 /* RegistrationInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RegistrationInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E6A0ADA31F03DCC500FDAE67 /* RegistrationInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RegistrationInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E6A0ADA51F03DCD000FDAE67 /* RegistrationInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RegistrationInfo+CoreDataClass.h"; sourceTree = "<group>"; };
+		E6A0ADA61F03DCD000FDAE67 /* RegistrationInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RegistrationInfo+CoreDataClass.m"; sourceTree = "<group>"; };
 		ED15C6F9923AD8FC96B6BEB2 /* Pods-Atallah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atallah.release.xcconfig"; path = "Pods/Target Support Files/Pods-Atallah/Pods-Atallah.release.xcconfig"; sourceTree = "<group>"; };
 		FA0E16191E05E0DA00D18035 /* AttalahMaronite_1.8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AttalahMaronite_1.8.xcdatamodel; sourceTree = "<group>"; };
 		FA0E161A1E05E1DE00D18035 /* NotificationInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NotificationInfo+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -102,10 +107,6 @@
 		FA7C90491DFC86030046F836 /* Member+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Member+CoreDataProperties.m"; sourceTree = "<group>"; };
 		FA7C904A1DFC86030046F836 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
 		FA7C904B1DFC86030046F836 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
-		FA7C904C1DFC86030046F836 /* RegistrationInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RegistrationInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
-		FA7C904D1DFC86030046F836 /* RegistrationInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RegistrationInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
-		FA7C904E1DFC86030046F836 /* RegistrationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationInfo.h; sourceTree = "<group>"; };
-		FA7C904F1DFC86030046F836 /* RegistrationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationInfo.m; sourceTree = "<group>"; };
 		FA7C90631DFC86030046F836 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA7C90641DFC86030046F836 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7C90651DFC86030046F836 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -253,10 +254,10 @@
 				FA7C90491DFC86030046F836 /* Member+CoreDataProperties.m */,
 				FA7C904A1DFC86030046F836 /* Member.h */,
 				FA7C904B1DFC86030046F836 /* Member.m */,
-				FA7C904C1DFC86030046F836 /* RegistrationInfo+CoreDataProperties.h */,
-				FA7C904D1DFC86030046F836 /* RegistrationInfo+CoreDataProperties.m */,
-				FA7C904E1DFC86030046F836 /* RegistrationInfo.h */,
-				FA7C904F1DFC86030046F836 /* RegistrationInfo.m */,
+				E6A0ADA21F03DCC500FDAE67 /* RegistrationInfo+CoreDataProperties.h */,
+				E6A0ADA31F03DCC500FDAE67 /* RegistrationInfo+CoreDataProperties.m */,
+				E6A0ADA51F03DCD000FDAE67 /* RegistrationInfo+CoreDataClass.h */,
+				E6A0ADA61F03DCD000FDAE67 /* RegistrationInfo+CoreDataClass.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -675,7 +676,6 @@
 				FA7C90851DFC86030046F836 /* AttalahMaronite.xcdatamodeld in Sources */,
 				FA7C90861DFC86030046F836 /* Member+CoreDataProperties.m in Sources */,
 				FA24C1BD1E092F8E005923C3 /* NotificationDetailsViewController.m in Sources */,
-				FA7C90891DFC86030046F836 /* RegistrationInfo.m in Sources */,
 				FA7C90901DFC86030046F836 /* AtallahNavigationController.m in Sources */,
 				FA24C1BA1E092569005923C3 /* NotificationDateViewController.m in Sources */,
 				FA7C90951DFC86030046F836 /* MemberViewController.m in Sources */,
@@ -686,12 +686,13 @@
 				FA0E161F1E05E1DE00D18035 /* NotificationInfo+CoreDataProperties.m in Sources */,
 				FA0E161E1E05E1DE00D18035 /* NotificationInfo+CoreDataClass.m in Sources */,
 				FA7C90911DFC86030046F836 /* ContactUsViewController.m in Sources */,
-				FA7C90881DFC86030046F836 /* RegistrationInfo+CoreDataProperties.m in Sources */,
 				FA7C90981DFC86030046F836 /* TypesViewController.m in Sources */,
+				E6A0ADA41F03DCC500FDAE67 /* RegistrationInfo+CoreDataProperties.m in Sources */,
 				FA7C908F1DFC86030046F836 /* AboutUsViewController.m in Sources */,
 				FA7C908C1DFC86030046F836 /* main.m in Sources */,
 				FA7C90941DFC86030046F836 /* MemberTableViewCell.m in Sources */,
 				FA7C90921DFC86030046F836 /* DetailsViewController.m in Sources */,
+				E6A0ADA71F03DCD000FDAE67 /* RegistrationInfo+CoreDataClass.m in Sources */,
 				FA7C90871DFC86030046F836 /* Member.m in Sources */,
 				FA7C90931DFC86030046F836 /* MainViewController.m in Sources */,
 				FA7C908D1DFC86030046F836 /* UICKeyChainStore.m in Sources */,
@@ -944,10 +945,11 @@
 		FA7C90461DFC86030046F836 /* AttalahMaronite.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				E6A0ADA11F03DC6900FDAE67 /* AttalahMaronite_1.9.xcdatamodel */,
 				FA0E16191E05E0DA00D18035 /* AttalahMaronite_1.8.xcdatamodel */,
 				FA7C90471DFC86030046F836 /* AttalahMaronite.xcdatamodel */,
 			);
-			currentVersion = FA0E16191E05E0DA00D18035 /* AttalahMaronite_1.8.xcdatamodel */;
+			currentVersion = E6A0ADA11F03DC6900FDAE67 /* AttalahMaronite_1.9.xcdatamodel */;
 			path = AttalahMaronite.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

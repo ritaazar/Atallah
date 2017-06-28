@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "DownPicker.h"
 #import "AtallahNavigationController.h"
-#import "RegistrationInfo.h"
 #import "AppDelegate.h"
+#import "RegistrationInfo+CoreDataClass.h"
 
 @interface RegistrationViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, NSURLSessionDelegate, DownPickerParentDelegate>
 {

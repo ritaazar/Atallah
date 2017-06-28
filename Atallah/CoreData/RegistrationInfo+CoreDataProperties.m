@@ -1,17 +1,18 @@
 //
 //  RegistrationInfo+CoreDataProperties.m
-//  AtallahMaronite
+//  
 //
-//  Created by Azar, Rita on 6/2/16.
-//  Copyright © 2016 Azar, Rita. All rights reserved.
+//  Created by Rita Azar on 6/28/17.
 //
-//  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
-//  to delete and recreate this implementation file for your updated model.
 //
 
 #import "RegistrationInfo+CoreDataProperties.h"
 
 @implementation RegistrationInfo (CoreDataProperties)
+
++ (NSFetchRequest<RegistrationInfo *> *)fetchRequest {
+	return [[NSFetchRequest alloc] initWithEntityName:@"RegistrationInfo"];
+}
 
 @dynamic address;
 @dynamic bloodType;
@@ -27,5 +28,6 @@
 @dynamic mobileNumber;
 @dynamic motherLastName;
 @dynamic motherName;
+@dynamic personId;
 
 @end

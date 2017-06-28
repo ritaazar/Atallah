@@ -1,9 +1,9 @@
 //
-//  RegistrationInfo.h
-//  AtallahMaronite
+//  RegistrationInfo+CoreDataClass.h
+//  
 //
-//  Created by Azar, Rita on 6/2/16.
-//  Copyright © 2016 Azar, Rita. All rights reserved.
+//  Created by Rita Azar on 6/28/17.
+//
 //
 
 #import <Foundation/Foundation.h>
@@ -12,8 +12,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RegistrationInfo : NSManagedObject
-
-// Insert code here to declare functionality of your managed object subclass
 
 @end
 

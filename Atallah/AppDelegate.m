@@ -13,7 +13,6 @@
 #import <Crashlytics/Crashlytics.h>
 #import <Fabric/Fabric.h>
 #import "UICKeyChainStore.h"
-#import "RegistrationInfo.h"
 #import <OneSignal/OneSignal.h>
 
 @implementation AppDelegate

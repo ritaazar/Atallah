@@ -1,34 +1,35 @@
 //
 //  RegistrationInfo+CoreDataProperties.h
-//  AtallahMaronite
+//  
 //
-//  Created by Azar, Rita on 6/2/16.
-//  Copyright © 2016 Azar, Rita. All rights reserved.
+//  Created by Rita Azar on 6/28/17.
 //
-//  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
-//  to delete and recreate this implementation file for your updated model.
 //
 
-#import "RegistrationInfo.h"
+#import "RegistrationInfo+CoreDataClass.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RegistrationInfo (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSString *address;
-@property (nullable, nonatomic, retain) NSString *bloodType;
-@property (nullable, nonatomic, retain) NSString *canDonate;
-@property (nullable, nonatomic, retain) NSString *deviceID;
-@property (nullable, nonatomic, retain) NSString *emailAddress;
-@property (nullable, nonatomic, retain) NSString *firstName;
-@property (nullable, nonatomic, retain) NSString *gender;
-@property (nullable, nonatomic, retain) NSString *hometown;
-@property (nullable, nonatomic, retain) NSString *job;
-@property (nullable, nonatomic, retain) NSString *lastName;
-@property (nullable, nonatomic, retain) NSString *middleName;
-@property (nullable, nonatomic, retain) NSString *mobileNumber;
-@property (nullable, nonatomic, retain) NSString *motherLastName;
-@property (nullable, nonatomic, retain) NSString *motherName;
++ (NSFetchRequest<RegistrationInfo *> *)fetchRequest;
+
+@property (nullable, nonatomic, copy) NSString *address;
+@property (nullable, nonatomic, copy) NSString *bloodType;
+@property (nullable, nonatomic, copy) NSString *canDonate;
+@property (nullable, nonatomic, copy) NSString *deviceID;
+@property (nullable, nonatomic, copy) NSString *emailAddress;
+@property (nullable, nonatomic, copy) NSString *firstName;
+@property (nullable, nonatomic, copy) NSString *gender;
+@property (nullable, nonatomic, copy) NSString *hometown;
+@property (nullable, nonatomic, copy) NSString *job;
+@property (nullable, nonatomic, copy) NSString *lastName;
+@property (nullable, nonatomic, copy) NSString *middleName;
+@property (nullable, nonatomic, copy) NSString *mobileNumber;
+@property (nullable, nonatomic, copy) NSString *motherLastName;
+@property (nullable, nonatomic, copy) NSString *motherName;
+@property (nullable, nonatomic, copy) NSNumber *personId;
 
 @end
 

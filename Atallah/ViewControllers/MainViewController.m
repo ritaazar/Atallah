@@ -12,7 +12,6 @@
 #import "Member.h"
 #import "MemberViewController.h"
 #import <Crashlytics/Crashlytics.h>
-#import "RegistrationInfo.h"
 #import "NotificationInfo+CoreDataProperties.h"
 #import "NotificationDateViewController.h"
 #import "RegistrationViewController.h"

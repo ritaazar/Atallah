@@ -11,7 +11,6 @@
 #import "DownPicker.h"
 #import "AtallahNavigationController.h"
 #import "MainViewController.h"
-#import "RegistrationInfo.h"
 #import <Crashlytics/Crashlytics.h>
 #import "AppDelegate.h"
 
@@ -542,58 +541,20 @@
     return verified;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-//    activityIndicator.hidden = NO;
-    if ([segue.identifier isEqualToString:@"createAccount"])
-    {
-        if (isEditingMode)
-        {
-            [self editAccount];
-        }
-        else
-        {
-            [self createAccount];
-        }
-    }
-    destinationView = segue.destinationViewController;
-    MainViewController *controller = (MainViewController *)destinationView.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
-}
-
 -(void) editAccount
 {
-    [self deleteExistingData];
-    [self saveRegistrationInfo];
-    [self editAccountPost];
-
+    if (_registrationInfo != nil)
+    {
+        if (_registrationInfo.personId != nil)
+        {
+            [self editAccountPost: _registrationInfo.personId];
+        }
+    }
 }
 
 -(void)createAccount
 {
-    [self deleteExistingData];
-    [self saveRegistrationInfo];
     [self postDataToServer];
-}
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
-{
-    if ([identifier isEqualToString:@"createAccount"])
-    {
-        BOOL goNext = [self verifyRequiredFields];
-        if (goNext)
-        {
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            [defaults setBool:YES forKey:@"isRegistered"];
-            
-            fullName = [NSString stringWithFormat:@"%@ %@ %@", firstName.text, middleName.text, lastName.text];
-            [Answers logCustomEventWithName:fullName customAttributes:nil];
-        }
-        return goNext;
-    }
-    else
-    {
-        return YES;
-    }
 }
 
 -(void) deleteExistingData
@@ -615,9 +576,10 @@
     
 }
 
--(void) saveRegistrationInfo
+-(void) saveRegistrationInfo: (NSNumber *) personId
 {
     RegistrationInfo *member = [NSEntityDescription insertNewObjectForEntityForName:@"RegistrationInfo" inManagedObjectContext:[self managedObjectContext]];
+    member.personId = personId;
     member.firstName= firstName.text;
     member.middleName= middleName.text;
     member.lastName= lastName.text;
@@ -685,21 +647,30 @@
                                                     dataReturned = [NSString stringWithFormat:@"%ld", (long)status];
                                                     NSLog(@"postDataToServer returned error code: %@", dataReturned);
                                                 }
+                                                NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+                                                f.numberStyle = NSNumberFormatterDecimalStyle;
+                                                NSNumber *personId = [f numberFromString:dataReturned];
+                                                
+                                                [self deleteExistingData];
+                                                [self saveRegistrationInfo: personId];
+                                                
                                                 [Answers logCustomEventWithName:fullName customAttributes:@{@"Post Returned Status":dataReturned}];
                                                 appDelegate.loading.hidden = YES;
+                                                [self pushToMainNavigationController];
                                             }];
     
     [task resume];
     
 }
 
--(void)editAccountPost
+-(void)editAccountPost: (NSNumber *) personId
 {
     appDelegate.loading.hidden = NO;
     //TODO: fix the blood type that is being saved with "?" mark in sql server db
     
     NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://atallahmaronite.com/api/users/editperson"]];
     [req setHTTPMethod:@"POST"];
+    NSString *personID = [NSString stringWithFormat:@"%@", personId];
     NSString *lastNameText = lastName.text;
     NSString *firstNameText = firstName.text;
     NSString *middleNameText = middleName.text;
@@ -714,7 +685,7 @@
     NSString *addressText = address.text;
     NSString *hometownText = hometown.text;
     NSString *deviceID = [AppDelegate getDeviceUUID];
-    NSDictionary *dictionary = @{@"LastName":lastNameText, @"MiddleName":middleNameText, @"FirstName":firstNameText, @"MotherName":motherNameText, @"MotherLastName":motherLastNameText, @"Gender":sexText, @"MobileNumber":phoneNumberText, @"EmailAddress":emailText, @"Job":jobText, @"BloodType":bloodTypeText, @"CanDonate":canDonateText, @"Address":addressText, @"Hometown":hometownText, @"DeviceID":deviceID};
+    NSDictionary *dictionary = @{@"PersonId":personID, @"LastName":lastNameText, @"MiddleName":middleNameText, @"FirstName":firstNameText, @"MotherName":motherNameText, @"MotherLastName":motherLastNameText, @"Gender":sexText, @"MobileNumber":phoneNumberText, @"EmailAddress":emailText, @"Job":jobText, @"BloodType":bloodTypeText, @"CanDonate":canDonateText, @"Address":addressText, @"Hometown":hometownText, @"DeviceID":deviceID};
     NSError *err;
     NSData * jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:0 error:&err];
     NSString * string = [[NSString alloc] initWithData:jsonData   encoding:NSUTF8StringEncoding];
@@ -738,13 +709,59 @@
                                           NSInteger status = [error code];
                                           dataReturned = [NSString stringWithFormat:@"%ld", (long)status];
                                           NSLog(@"editAccountPost returned error code: %@", dataReturned);
+
                                       }
+                                      
+                                      [self deleteExistingData];
+                                      [self saveRegistrationInfo: personId];
                                       [Answers logCustomEventWithName:fullName customAttributes:@{@"Edit Returned Status":dataReturned}];
                                       appDelegate.loading.hidden = YES;
+                                      [self pushToMainNavigationController];
                                   }];
     
     [task resume];
     
+}
+
+-(void) pushToMainNavigationController
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    AtallahNavigationController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"AtallahNavigationController"];
+    
+    MainViewController *controller = (MainViewController *)viewController.topViewController;
+    controller.managedObjectContext = self.managedObjectContext;
+    
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+-(IBAction)createAccountAction:(id)sender
+{
+    BOOL goNext = [self verifyRequiredFields];
+    if (goNext)
+    {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setBool:YES forKey:@"isRegistered"];
+        
+        fullName = [NSString stringWithFormat:@"%@ %@ %@", firstName.text, middleName.text, lastName.text];
+        [Answers logCustomEventWithName:fullName customAttributes:nil];
+    }
+
+    if (goNext)
+    {
+        if (isEditingMode)
+        {
+            [self editAccount];
+        }
+        else
+        {
+            [self createAccount];
+        }
+    }
+}
+
+-(IBAction)skipButtonAction:(id)sender
+{
+    [self pushToMainNavigationController];
 }
 
 @end
